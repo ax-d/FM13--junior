@@ -1,85 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
   <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap"
+    rel="stylesheet">
   <title>Frontend Mentor | Insure landing page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-
-  </style>
 </head>
-<body>
 
-  How we work
-  Blog
-  Account
-  View plans
+<body class="page">
+  <header class="page__header">
+    <div class="wrapper wrapper--header">
+      <img src="/img/logo.svg" alt="Insure logo" class="img img__header">
+      <a href="#"><img src="/img/icon-hamburger.svg" alt="hamburger icon" class="img img__menu"></a>
+      <nav class="nav__header">
+      <ul class="menu menu__header">
+        <li class="menu__item">
+          <a href="#" class="link menu__link">How we work</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="link menu__link">Blog</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="link menu__link">Account</a>
+        </li>
+        <li class="menu__item">
+          <a href="#" class="link menu__link">View plans</a>
+        </li>
+      </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page__content">
 
-  Humanizing your insurance.
+    <article class="hero">
+      <div class="wrapper wrapper--hero">
+        <img src="/img/image-intro-mobile.jpg" alt="a family walking hand in hand" class="img img__hero">
+        <div class="group group--hero">
+          <h1 class="title title--hero">
+            Humanizing your insurance.
+          </h1>
+          <p class="copy copy--hero">
+            Get your life insurance coverage easier and faster. We blend our expertise
+            and technology to help you find the plan that’s right for you. Ensure you
+            and your loved ones are protected.
+          </p>
+          <a href="" class="link btn btn--header">View plans</a>
+        </div>
+      </div>
+    </article>
 
-  Get your life insurance coverage easier and faster. We blend our expertise 
-  and technology to help you find the plan that’s right for you. Ensure you 
-  and your loved ones are protected.
+    <article class="different">
+      <div class="wrapper wrapper--different">
+        <h2 class="title title--different">
+          We’re different
+        </h2>
 
-  View plans
+        <div class="group group--different">
+          <img src="/img/icon-snappy-process.svg" alt="snappy process image" class="img img--different-sub">
+          <h3 class="title title--different-sub">
+            Snappy Process
+          </h3>
+          <p class="copy copy--different-sub">
+            Our application process can be completed in minutes, not hours. Don’t get
+            stuck filling in tedious forms.
+          </p>
+        </div>
+        <div class="group group--different">
+          <img src="/img/icon-affordable-prices.svg" alt="affordable prices" class="img img--different-sub">
+          <h3 class="title title--different-sub">
+            Affordable Prices
+          </h3>
+          <p class="copy copy--different-sub">
+            We don’t want you worrying about high monthly costs. Our prices may be low,
+            but we still offer the best coverage possible.
+          </p>
+        </div>
+        <div class="group group--different">
+          <img src="/img/icon-people-first.svg" alt="people first" class="img img--different-sub">
+          <h3 class="title title--different-sub">
+            People First
+          </h3>
+          <p class="copy copy--different-sub">
+            Our plans aren’t full of conditions and clauses to prevent payouts. We make
+            sure you’re covered when you need it.
+          </p>
+        </div>
+      </div>
+    </article>
 
-  We’re different
-
-  Snappy Process
-
-  Our application process can be completed in minutes, not hours. Don’t get 
-  stuck filling in tedious forms.
-
-  Affordable Prices
-
-  We don’t want you worrying about high monthly costs. Our prices may be low, 
-  but we still offer the best coverage possible.
-
-  People First
-
-  Our plans aren’t full of conditions and clauses to prevent payouts. We make 
-  sure you’re covered when you need it.
-
-  Find out more about how we work
-
-  How we work
-
-  Our company
-
-  How we work
-  Why Insure?
-  View plans
-  Reviews
-
-  Help me
-
-  FAQ
-  Terms of use
-  Privacy policy
-  Cookies
-
-  Contact
-
-  Sales
-  Support
-  Live chat
-
-  Others
-
-  Careers
-  Press
-  Licenses
-
+    <aside class="cta">
+      <div class="wrapper wrapper--cta">
+        <h2 class="title title--cta">
+          Find out more about how we work
+        </h2>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="link">Frontend Mentor</a>. 
-    Coded by <a href="#" class="link">AX-d</a>.
-  </div>
+        <a href="" class="link btn btn--cta">How we work</a>
+      </div>
+    </aside>
+  </main>
+  <footer class="page__footer">
+    <div class="wrapper wrapper--footer">
+      <div class="group group--footer">
+        <img src="/img/logo.svg" alt="" class="img img--footer">
+        <ul class="menu menu--social">
+          <li class="menu__item menu__item--footer menu__item--social"><a href="#" class="link social-menu__link"><img
+                src="/img/icon-facebook.svg" alt="facebook" class="social--icon"></a></li>
+          <li class="menu__item menu__item--footer menu__item--social"><a href="#" class="link social-menu__link"><img
+                src="/img/icon-twitter.svg" alt="twitter" class="social--icon"></a></li>
+          <li class="menu__item menu__item--footer menu__item--social"><a href="#" class="link social-menu__link"><img
+                src="/img/icon-pinterest.svg" alt="pinterest" class="social--icon"></a></li>
+          <li class="menu__item menu__item--footer menu__item--social"><a href="#" class="link social-menu__link"><img
+                src="/img/icon-instagram.svg" alt="instagram" class="social--icon"></a></li>
+        </ul>
+      </div>
+  
+      <div class="group group--company">
+        <h4 class="title title--footer-sub">
+          Our company
+        </h4>
+        <ul class="menu menu--footer">
+          <li class="menu__item"><a href="" class="link menu__link">How we work</a></li>
+          <li class="menu__item"><a href="" class="link menu__link">Why Insure?</a></li>
+          <li class="menu__item"><a href="" class="link menu__link">Check Price</a></li>
+          <li class="menu__item"><a href="" class="link menu__link">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="group group--help">
+  
+        <h4 class="title title--footer-sub">
+          Help me
+        </h4>
+        <ul class="menu menu--footer">
+          <li class="menu__item"><a href="" class="link menu__link">FAQ</a></li>
+          <li class="menu__item"><a href="" class="link menu__link">Terms of use</a></li>
+          <li class="menu__item"><a href="" class="link menu__link">Privacy policy</a></li>
+          <li class="menu__item"><a href="" class="link menu__link">Cookies</a></li>
+        </ul>
+      </div>
+      <div class="group group--contact">
+  
+        <h4 class="title title--footer-sub">
+          Contact
+        </h4>
+        <ul class="menu menu--footer">
+          <li class="menu__item"><a href="" class="link menu__link">Sales</a></li>
+          <li class="menu__item"><a href="" class="link menu__link">Support</a></li>
+          <li class="menu__item"><a href="" class="link menu__link">Live chat</a></li>
+        </ul>
+      </div>
+      <div class="group group--others">
+  
+        <h4 class="title title--footer-sub">
+          Others
+        </h4>
+        <ul class="menu menu--footer">
+          <li class="menu__item"><a href="" class="link menu__link">Careers</a></li>
+          <li class="menu__item"><a href="" class="link menu__link">Press</a></li>
+          <li class="menu__item"><a href="" class="link menu__link">Licenses</a></li>
+        </ul>
+      </div>
+  
+  
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="link">Frontend
+          Mentor</a>.
+        Coded by <a href="#" class="link">AX-d</a>.
+      </div>
+    </div>
+  </footer>
   <script src="/js/main.js"></script>
 </body>
+
 </html>
