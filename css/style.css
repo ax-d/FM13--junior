@@ -19,6 +19,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Karla', sans-serif;
+  min-width: 375px;
 }
 
 .title,
@@ -69,8 +70,12 @@
   top: 80px;
   left: 0;
   padding: 33px 0 290px 0;
-
+  z-index: 1;
   display: none;
+}
+
+.nav__header.visible {
+  display: block;
 }
 
 .nav__header::after {
@@ -94,6 +99,12 @@
   margin-bottom: 8px;
   border: 2px solid transparent;
   padding: 13px 0;
+}
+
+.menu__header .selected {
+  border-color: var(--very-light-gray);
+  pointer-events: none;
+  cursor: default;
 }
 
 .menu__header .menu__item:nth-child(3) {
@@ -268,6 +279,7 @@
   padding: 9px 23px;
   margin-bottom: 71px;
 }
+
 /* end aside - cta  */
 /* start page__footer */
 .wrapper--footer {
@@ -309,25 +321,26 @@
 }
 
 .group--footer::after {
-position: absolute;
-content: '';
-background: var(--dark-grayish-violet);
-height: 1px;
-bottom: 0;
-left: 0;
-right: 0;
+  position: absolute;
+  content: '';
+  background: var(--dark-grayish-violet);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .img--footer {
-margin-bottom: 33px;
+  margin-bottom: 33px;
 }
 
 .menu--social {
   width: 145px;
-  display: flex;  
+  display: flex;
   margin-bottom: 25px;
   justify-content: space-between;
 }
+
 /* end group - footer  */
 /* start group - company */
 .title--footer-sub {
@@ -338,7 +351,7 @@ margin-bottom: 33px;
 }
 
 .page__footer .menu__item {
-margin-bottom: 11px;
+  margin-bottom: 11px;
 }
 
 .page__footer .menu__link {
@@ -348,21 +361,25 @@ margin-bottom: 11px;
   color: var(--dark-violet);
 
 }
+
 /* end group - company  */
 /* start group - help */
 .group--help {
   margin-top: 11px;
 }
+
 /* end group - help  */
 /* start group - contact */
 .group--contact {
   margin-top: 12px;
 }
+
 /* end group - contact  */
 /* start group - others */
 .group--others {
   margin-top: 10px;
 }
+
 /* end group - others  */
 
 .attribution {
